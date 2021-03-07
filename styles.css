@@ -1,0 +1,278 @@
+    body {
+        font-family: 'Fira Mono';
+    }
+
+    .header-background{
+        background:rgba(1, 1, 1, .8);
+        color:rgba(255, 255, 255, .8);
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0.5em 0.5em 0.5em 1.5em;
+    }
+
+    .my-title {
+        flex-grow: 1;
+    }
+
+    .navbar-list {
+        display: flex;
+    }
+    
+    /* .hamburger {
+
+    } */
+
+    .navbar-element {
+        list-style: none;
+        margin: 0 1.5em 0 1.5em;
+        font-size: 1.2rem;
+        font-weight:800;
+    }
+
+    @media (max-width: 816px) {
+        /* .navbar-list {
+            /* I will uncomment this and add a hamburger menu afterwards 
+            /* display:none; 
+
+        } */
+    }
+
+    .main {
+        /* background:rgba(0, 0, 255, .1); */
+    }
+    
+
+    .personal {
+        padding: 0em 5em 0em 5em;
+        display: flex;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        /* Remove the following after finishing  */
+        /* background: rgba(255, 0, 255, .1);               */
+    }
+
+    .photo {
+        flex-grow: 1;
+        margin: 5vw;
+        max-width: 30%;
+        border-radius: 0%;
+        border: 5px solid rgb(50, 50, 50);
+        box-shadow:  rgb(50, 50, 50) 10px 10px;
+    }
+    .beside-photo {
+        font-size: 1.8em;
+        /* margin: 0 1em 0 1em; */
+        /* width: 50em; */
+        padding: 4em;
+        max-width: 70vh;
+    }
+    .greeting {
+        margin-right: 2em;
+        font-size: 1.5em;
+    }
+
+    .message-section {
+        font-size: 1em;
+        padding: 1em 0 1em 0;
+        font-weight: 900;
+
+    }
+    .interests-title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .interests{
+        /* background: rgba(50, 50, 50, .2); */
+        padding: 2em 12em 0 12em;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .card {
+        box-shadow: rgb(50, 50, 50) 5px 5px;
+        width: 20em;
+        height: 11em;
+        font-size: 1.5em;
+        border: 5px solid black;
+        margin: 20px;
+        transition: transform .2s, box-shadow .2s;
+    }
+    .card-wrapper {
+        padding: .5em;
+    }
+
+    .card:hover {
+        box-shadow: rgb(50, 50, 50) 30px 30px 15px;
+        transform: translate(-5px, -5px);
+    }
+
+    .card-heading {
+        font-size: 1.2em;
+        font-weight: 800;
+        padding-bottom: 1em;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        justify-content: left;
+
+    }
+
+    .projects-flexbox-container {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1.5em;
+    }
+
+    .project-card {
+        min-width: 520px;
+        box-shadow: rgb(50, 50, 50) 5px 5px;
+        width: 20em;
+        height: 11em;
+        font-size: 1.5em;
+        border: 5px solid black;
+        margin: 20px;
+        transition: height .2s, transform .2s, box-shadow .2s;
+    }
+    .project-card:hover {
+        height: 22em;
+        box-shadow: rgb(50, 50, 50) 30px 30px 15px;
+        transform: translate(-5px, -5px);
+    }
+
+    .project-details {
+        font-size: .9em;
+        padding: 0 .2em 0 .2em;
+    }
+
+
+    .project-card:hover .project-details {
+        display: block;
+    }
+
+    .project-card:hover hr {
+        margin: 1em 1em 1em 1em;
+        border: 2px solid black;
+        background: black;
+    }
+
+
+
+    .project-card-heading {
+        padding-bottom: 0;
+    }
+
+    .project-showcase-wrapper{
+        flex-grow: 2;
+    }
+    .project-showcase {
+        /* display: none; */
+        background:rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        border: 5px solid black;
+        margin: 1.2em;
+        padding: 3em;
+        min-height: 50em;
+        box-shadow: 5px 5px rgba(1, 1, 1, .8);
+
+    }
+    .project-details {
+        display: none;
+    }
+
+    .project-showcase h2 {
+        text-align: center;
+    }
+
+    .project-showcase .card {
+        width: 18em;
+        background: white;
+    }
+/* 
+    .project-showcase .card:hover {
+        transform: none;
+        box-shadow: rgb(50, 50, 50) 5px 5px;
+    } */
+
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2em;
+        background:rgba(1, 1, 1, .8);
+        color: rgba(255, 255, 255, .8);
+        padding: 2em;
+        margin-top: 2em;
+    }
+
+    .project-showcase h2 {
+        font-size: 2em;
+    }
+
+
+    @media (max-width: 1280px) {
+        .personal {
+            flex-direction: column;
+        }
+        .beside-photo{
+            padding-top: 0;
+        }
+        .photo{
+            min-width: 40vw;
+            /* max-width: 30vw; */
+        }
+        .interests{
+        padding: 5em 5em 0 5em;
+
+        }
+        .card {
+            font-size: 2.25em;
+            width: 80vw;
+            height: 10em;
+        }
+
+        /* projects */
+
+        .projects-flexbox-container {
+            flex-direction: column;
+        }
+
+        .project-cards{
+            align-items: center;
+        }
+
+        .project-card {
+            width: 25em;
+            height: 15em;
+            font-size: 2em;
+        }
+        .project-showcase .card-heading{
+            font-size: 2rem;
+        }
+        .project-showcase-wrapper {
+            padding: 0 3em 0 2.8em;
+        }
+        
+    }
+
+    .link-on-dark{
+        color: aquamarine;
+        text-decoration: none;
+        margin-left: .5em;
+    }
+
+    .link-on-light {
+        color:rgb(11, 133, 92);
+        text-decoration: none;
+    }
+
+
